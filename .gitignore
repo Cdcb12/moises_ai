@@ -3,5 +3,6 @@
 .env
 __pycache__/
 *.py[cod]
+moises.pem
 
 .pytest_cache/
