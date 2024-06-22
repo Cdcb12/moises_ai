@@ -3,6 +3,8 @@
 .env
 __pycache__/
 *.py[cod]
-moises.pem
+.moises.pem
+awsrds.txt
+Pipfile
 
 .pytest_cache/

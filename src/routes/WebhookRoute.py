@@ -44,6 +44,9 @@ def authController(data: dict) -> tuple:
         authenticated_user = AuthService.auth_user(_user)
 
         if (authenticated_user != None):
+            if authenticated_user.ban == "TRUE":
+                return jsonify(success=False), 200
+
             if authenticated_user.type == "owner":
                 return AdminController.console(authenticated_user, incoming_message)
             else:
